@@ -32,7 +32,7 @@ class CustomImage:
         for i in range(row):
             for j in range(columns):
                 image = self.image_part[i][j]
-                self.__add_text__(image, f'{i*4+j}')
+                self.__add_text__(image, f'{i*4+j+1}')
 
     def __add_text__(self, image, text):
         draw = ImageDraw.Draw(image)
