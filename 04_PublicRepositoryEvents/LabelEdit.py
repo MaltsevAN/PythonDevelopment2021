@@ -10,10 +10,10 @@ class Application(tk.Frame):
         self.master.rowconfigure(0, weight=1)
         self.grid(sticky="news")
         self.create_widgets()
-        # for column in range(self.grid_size()[0]):
-        #     self.columnconfigure(column, weight=1)
-        # for row in range(self.grid_size()[1]):
-        #     self.rowconfigure(row, weight=1)
+        for column in range(self.grid_size()[0]):
+            self.columnconfigure(column, weight=1)
+        for row in range(self.grid_size()[1]):
+            self.rowconfigure(row, weight=1)
 
     def create_widgets(self):
         self.labelText = InputLabel(self)
